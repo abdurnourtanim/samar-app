@@ -1,0 +1,139 @@
+/* Fetures css start */
+.fetures__content {
+  margin-top: 100px;
+}
+.fetures__content .wrapper {
+  display: flex;
+  align-items: center;
+}
+.fetures__content__inner {
+  max-width: 50%;
+}
+.fetures__content__inner .heading {
+  margin-bottom: 40px;
+}
+.fetures__details {
+  margin-bottom: 40px;
+}
+.fetures__details__box {
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+}
+.fetures__details__box:hover .icon::before {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+.fetures__details__box.two {
+  margin-left: 100px;
+}
+.fetures__details__content {
+  padding-left: 40px;
+}
+.fetures__details__content .mini__title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+.fetures__details__box .icon {
+  position: relative;
+  min-width: fit-content;
+  margin: 20px;
+}
+.fetures__details__box .icon::before {
+  position: absolute;
+  left: -47px;
+  top: -48px;
+  width: 165px;
+  height: 165px;
+  z-index: -1;
+  transition: all 5s;
+  -webkit-transition: all 5s;
+  -moz-transition: all 5s;
+  -ms-transition: all 5s;
+  -o-transition: all 5s;
+}
+.fetures__details__box .icon__one::before {
+  content: url("../assets/img/fetures-icon-bg-1.png");
+}
+.fetures__details__box .icon__two::before {
+  content: url("../assets/img/fetures-icon-bg-2.png");
+}
+.fetures__details__box .icon__three::before {
+  content: url("../assets/img/fetures-icon-bg-3.png");
+}
+.fetures__illustration {
+  max-width: 50%;
+  padding: 0 30px;
+}
+.fetures__illustration img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+  .fetures__content {
+    margin-top: 50px;
+  }
+  .fetures__content .main__title {
+    font-size: 30px;
+  }
+  .fetures__content .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .fetures__content__inner {
+    max-width: 100%;
+    padding: 20px;
+  }
+  .fetures__illustration {
+    max-width: 70%;
+    margin: auto;
+  }
+  .fetures__content__inner .heading {
+    text-align: center;
+  }
+  .fetures__content__inner .heading .sub__title {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fetures__details__box.two {
+    margin-left: 0;
+  }
+  .fetures__content .main__title {
+    font-size: 25px;
+  }
+  .fetures__details__content .mini__title {
+    font-size: 1.2rem;
+  }
+  .fetures__details__content > p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .fetures__details__box {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 0;
+  }
+  .fetures__details__content {
+    padding-left: 0;
+    margin: 30px 0;
+    text-align: center;
+  }
+  .fetures__illustration {
+    max-width: 90%;
+  }
+  .fetures__content__inner {
+    padding: 0;
+  }
+}
+
+/* Fetures css end */

@@ -1,0 +1,93 @@
+/* About Counter css start */
+.about__counter {
+  background: url("../assets/img/counter.png"), var(--main-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 30px 0 40px 0;
+}
+.counter__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0 1.5rem;
+}
+.counter {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-light);
+  border-radius: 12px;
+  box-shadow: 0 0 10px 4px rgb(31 66 135 / 10%);
+  padding: 30px 50px;
+  text-align: center;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.counter:hover {
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+}
+.counter .icon {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border-radius: 50%;
+}
+.counter .icon i {
+  font-size: 4rem;
+  color: var(--green);
+}
+.counter .icon img {
+  width: 50px;
+  height: auto;
+}
+.counter h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.counter h2 {
+  font-size: 2.375rem;
+  font-weight: 700;
+  color: var(--main-color);
+}
+.counter.second,
+.counter.last {
+  margin-top: 50px;
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+  .counter__wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 1rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .counter__wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem 0;
+  }
+  .counter.second,
+  .counter.last {
+    margin-top: 0;
+  }
+}
+
+/* About Counter css end */

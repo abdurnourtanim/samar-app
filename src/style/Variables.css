@@ -1,0 +1,18 @@
+/* variables */
+:root {
+  --bg-light: #fff;
+  --bg-dark1: #283046;
+  --bg-dark2: #161d31;
+  --text-light: #fff;
+  --text-dark: #262f5a;
+  --main-color: #896eff;
+  --main-color-hover: rgb(76, 56, 168);
+  --text-color: #1f2471;
+  --green: #029e76;
+  --blue: #5543d1;
+  --red: #ff566c;
+  --yellow: #ffa808;
+  --sub-title-bg: rgba(137, 110, 255, 0.1);
+  --footer-color: #b3a1ff;
+  --rating-start-color: #fea500;
+}

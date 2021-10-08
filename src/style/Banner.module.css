@@ -1,0 +1,116 @@
+/* Banner css start */
+.banner__content {
+  /* background-image: url("../image/banner-bg.png"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0 30px 0;
+  height: 100vh;
+}
+.banner__inner {
+  display: flex;
+  position: relative;
+}
+.img1 {
+  position: absolute;
+  left: 100px;
+  bottom: 50px;
+}
+.img2 {
+  position: absolute;
+  right: 0;
+  top: 120px;
+}
+.img1 img,
+.img2 img {
+  border-style: none;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.left__part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.left__part h6 {
+  letter-spacing: 2px;
+  text-transform: uppercase !important;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--main-color);
+}
+.left__part h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 3.375rem;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+.left__part p {
+  margin-bottom: 30px;
+  color: var(--text-color);
+  max-width: 80%;
+}
+.left__part h1 > span {
+  color: var(--main-color);
+}
+.banner__illustration {
+  position: relative;
+}
+.banner__illustration .banner__illustration__img {
+  width: 100%;
+  position: unset;
+}
+.banner__illustration .banner__illustration__img2 {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+  .banner__content {
+    padding: 70px 0 20px 0;
+    height: fit-content;
+  }
+  .left__part h1 {
+    font-size: 2.5rem;
+  }
+  .left__part p {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner__content {
+    padding: 40px 0 15px 0;
+  }
+  .banner__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .banner__content .right__part {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 575px) {
+  .banner__content {
+    padding: 30px 0 10px 0;
+  }
+  .left__part h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .banner__content .left__part {
+    margin-bottom: 20px;
+  }
+  .banner__content .right__part {
+    width: 90%;
+    margin: auto;
+  }
+}
+/* Banner css end */
