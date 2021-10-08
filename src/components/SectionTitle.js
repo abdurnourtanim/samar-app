@@ -1,12 +1,10 @@
 import React from "react";
 
-const SectionTitle = ({ subTitle, mainTitle, titleText }) => {
+const SectionTitle = ({ subTitle, mainTitle, title, text }) => {
   return (
     <>
-      <h6 className={`sub__title ${subTitle}`}> {titleText} </h6>
-      <p className={`main__title ${mainTitle}`}>
-        Provide Awesome Service To You
-      </p>
+      <h6 className={`sub__title ${subTitle}`}> {title} </h6>
+      <p className={`main__title ${mainTitle}`}>{text}</p>
     </>
   );
 };

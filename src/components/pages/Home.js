@@ -4,6 +4,7 @@ import Banner from "../Banner";
 import Counter from "../Counter";
 import Fetures from "../Fetures";
 import Navbar from "../Navbar";
+import Protfolio from "../Protfolio";
 import Services from "../Services";
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <About />
       <Counter />
       <Fetures />
+      <Protfolio />
     </>
   );
 };

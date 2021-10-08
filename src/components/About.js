@@ -17,7 +17,8 @@ const About = () => {
               <SectionTitle
                 subTitle={classes.sub__title}
                 mainTitle={classes.main__title}
-                titleText="About Us"
+                title="About Us"
+                text="How We Can Help You Achieve Your Business Goal"
               />
             </div>
             <p className={classes.about__p1}>

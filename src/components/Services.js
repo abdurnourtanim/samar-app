@@ -14,7 +14,8 @@ const Services = () => {
           <SectionTitle
             subTitle={classes.sub__title}
             mainTitle={classes.main__title}
-            titleText="Services"
+            title="Services"
+            text="Provide Awesome Service To You"
           />
         </div>
         <div className={classes.services__card__container}>

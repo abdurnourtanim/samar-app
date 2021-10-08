@@ -16,7 +16,8 @@ const Fetures = () => {
               <SectionTitle
                 subTitle={classes.sub__title}
                 mainTitle={classes.main__tilte}
-                titleText="Fetures"
+                title="Fetures"
+                text="Our Working Process To Help Your Boost Your Business"
               />
             </div>
             <div className={classes.fetures__details}>
