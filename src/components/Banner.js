@@ -1,7 +1,6 @@
 import React from "react";
 import img1 from "../assets/img/banner-bg-1.png";
 import img2 from "../assets/img/banner-bg-2.png";
-import img5 from "../assets/img/banner-bg.png";
 import img3 from "../assets/img/illustration-1.png";
 import img4 from "../assets/img/illustration-2.png";
 import classes from "../style/Banner.module.css";
@@ -9,11 +8,7 @@ import classes from "../style/Banner.module.css";
 const Banner = () => {
   return (
     <>
-      <section
-        id="home"
-        className={classes.banner__content}
-        style={{ background: `url(${img5})` }}
-      >
+      <section id="home" className={classes.banner__content}>
         <div className="container">
           <div className={classes.banner__inner}>
             <div className={classes.img1}>
