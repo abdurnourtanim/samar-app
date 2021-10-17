@@ -1,0 +1,22 @@
+/* Footer css start */
+.footer__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/img/footer-bg.png"), var(--footer-color);
+  padding: 15px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer__content p {
+  color: var(--text-color);
+  font-family: "Fira Code";
+}
+@media screen and (max-width: 575px) {
+  .footer__content p {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+/* Footer css end */

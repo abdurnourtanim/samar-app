@@ -1,0 +1,135 @@
+/* Contact section css start */
+.contact__content {
+  margin: 50px 0;
+}
+.content__wrapper {
+  display: flex;
+  align-items: center;
+}
+.contact__illustration {
+  width: 100%;
+  height: 100%;
+}
+.contact__illustration img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contact__content__wrapper {
+  display: grid;
+}
+.contact__heading {
+  margin-bottom: 30px;
+}
+.contact__form .input__group__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.input__group {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  position: relative;
+}
+.input__icons {
+  margin-right: 10px;
+  position: absolute;
+  top: 6px;
+  left: 17px;
+}
+.input__icons::after {
+  position: absolute;
+  top: 3px;
+  left: 25px;
+  content: "";
+  width: 2px;
+  height: 20px;
+  background: var(--main-color);
+}
+.input__group input,
+.input__group textarea,
+.input__group select {
+  box-shadow: 0 0 10px 4px rgb(31 66 135 / 10%);
+  border: none;
+  outline: none;
+  padding: 10px 20px 10px 65px;
+  transition: all 0.3s;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.input__group select {
+  color: var(--text-color);
+  font-family: "Operator Mono";
+  width: 100%;
+}
+.input__group select option {
+  font-size: 15px;
+  color: var(--text-color);
+}
+.input__group input::placeholder,
+.textarea__group textarea::placeholder {
+  font-family: "Operator Mono";
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+.textarea__group {
+  width: 100%;
+  padding-right: 25px;
+}
+.textarea__group textarea {
+  width: 100%;
+}
+.form__btn {
+  margin-top: 20px;
+}
+.contact__heading .main__title {
+  font-size: 30px;
+}
+.input__group input:focus,
+.input__group textarea:focus {
+  border: 1px solid var(--main-color);
+  background-color: var(--sub-title-bg);
+  color: var(--text-color);
+  font-family: "Operator Mono";
+}
+@media screen and (max-width: 992px) {
+  .contact__illustration {
+    display: none;
+  }
+  .contact__form .input__group__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 575px) {
+  .input__group input,
+  .input__group textarea {
+    padding: 10px 0 10px 65px;
+    width: 100%;
+  }
+  .input__group {
+    margin: 10px 0;
+    width: 100%;
+  }
+  .textarea__group {
+    padding: 0;
+  }
+  .contact__heading .sub__title {
+    margin: 0 auto;
+  }
+  .contact__heading .main__title {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* Contact section css end */
